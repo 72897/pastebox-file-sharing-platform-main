@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api/files': 'pastebox-file-sharing-platform-main.railway.internal',
+      '/api/files': 'pastebox-file-sharing-platform-main-production.up.railway.app',
     },
   },
 })
