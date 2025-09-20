@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom CSS variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --primary-text: #ec4899;
+  --text-on-primary: #ffffff;
+  --primary-soft: #fce7f3;
+  --primary-gradient: linear-gradient(to right, #ec4899, #8b5cf6);
+  --gradient-bg: linear-gradient(to right, #ec4899, #fbbf24, #6366f1);
+}
+
+[data-theme='blue'] {
+  --primary-text: #3b82f6;
+  --primary-soft: #dbeafe;
+  --primary-gradient: linear-gradient(to right, #60a5fa, #3b82f6);
+  --gradient-bg: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
+}
+
+[data-theme='green'] {
+  --primary-text: #10b981;
+  --primary-soft: #d1fae5;
+  --primary-gradient: linear-gradient(to right, #34d399, #10b981);
+  --gradient-bg: linear-gradient(to right, #34d399, #10b981, #059669);
+}
+
+[data-theme='purple'] {
+  --primary-text: #8b5cf6;
+  --primary-soft: #ede9fe;
+  --primary-gradient: linear-gradient(to right, #a78bfa, #8b5cf6);
+  --gradient-bg: linear-gradient(to right, #a78bfa, #8b5cf6, #6d28d9);
+}
+
+[data-mode='dark'] {
+  --bg-color: #1f2937;
+  --text-color: #f9fafb;
+  --text-on-primary: #f9fafb;
+  --primary-soft: rgba(255, 255, 255, 0.05);
+}
