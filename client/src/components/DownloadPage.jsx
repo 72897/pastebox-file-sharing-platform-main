@@ -33,7 +33,7 @@ const DownloadPage = () => {
 
   const fetchFile = async () => {
     try {
-      const res = await fetch(`http://localhost:6600/api/files/f/${shortCode}`, {
+      const res = await fetch(`pastebox-file-sharing-platform-main-production.up.railway.app/api/files/f/${shortCode}`, {
         signal: controller.signal,
       });
 
@@ -80,7 +80,7 @@ const DownloadPage = () => {
     }
 
     try {
-      const res = await fetch(`http://localhost:6600/api/files/verifyFilePassword`, {
+      const res = await fetch(`pastebox-file-sharing-platform-main-production.up.railway.app/api/files/verifyFilePassword`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ shortCode, password }),
