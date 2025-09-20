@@ -16,7 +16,7 @@ const GuestDownload = () => {
 
   const fetchFile = async () => {
     try {
-      const res = await fetch(`pastebox-file-sharing-platform-main.railway.internal/api/files/g/${shortCode}`, {
+      const res = await fetch(`pastebox-file-sharing-platform-main-production.up.railway.app/api/files/g/${shortCode}`, {
         signal: controller.signal,
       });
 
@@ -64,7 +64,7 @@ const GuestDownload = () => {
     }
 
     try {
-      const res = await fetch(`pastebox-file-sharing-platform-main.railway.internal/api/files/verifyGuestFilePassword`, {
+      const res = await fetch(`pastebox-file-sharing-platform-main-production.up.railway.app/api/files/verifyGuestFilePassword`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ shortCode, password }),
